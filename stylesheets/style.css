@@ -211,7 +211,7 @@ q:after {
 /* line 109, ../sass/_typography.scss */
 main blockquote {
   font-family: "Josefin Sans", sans-serif;
-  border-left: 1em solid #6476BD;
+  border-left: 1em solid #78162D;
   background-color: #ccc;
   padding: 0.75em;
 }
@@ -235,8 +235,8 @@ main blockquote.alignright, main blockquote.alignleft {
 
 /* line 132, ../sass/_typography.scss */
 main aside {
-  border-top: 1em solid #6476BD;
-  border-bottom: 1em solid #6476BD;
+  border-top: 1em solid #78162D;
+  border-bottom: 1em solid #78162D;
   background-color: #ccc;
   padding: 0.75em;
 }
