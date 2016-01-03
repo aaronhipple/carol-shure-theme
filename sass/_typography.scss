@@ -1,0 +1,196 @@
+@import 'compass/typography';
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,300|Roboto);
+@include establish-baseline();
+body {
+    font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $heading-font;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+header h1 {
+    @include adjust-font-size-to($ratio * $ratio * $ratio * $ratio * $base-font-size)
+}
+
+;
+h1 {
+    @include adjust-font-size-to($ratio * $ratio * $ratio * $base-font-size);
+    main & {
+        letter-spacing: 0.05em;
+    }
+}
+
+;
+h2 {
+    @include adjust-font-size-to($ratio * $ratio * $base-font-size);
+    main & {
+        letter-spacing: 0.05em;
+    }
+}
+
+;
+h3 {
+    @include adjust-font-size-to($ratio * $base-font-size);
+    main & {
+        letter-spacing: 0.05em;
+    }
+}
+
+;
+h4 {
+    @include adjust-font-size-to($base-font-size);
+    main & {
+        letter-spacing: 0.05em;
+    }
+}
+
+;
+p,
+ul,
+ol {
+    @include margin-leader(1);
+    @include margin-trailer(1);
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+main ul,
+ol {
+    padding-left: rhythm(2);
+}
+
+main ul {
+    list-style-type: disc;
+    ul {
+        list-style-type: circle;
+        ul {
+            list-style-type: square;
+        }
+    }
+}
+
+main ol {
+    list-style-type: decimal;
+    ol {
+        list-style-type: lower-alpha;
+        ol {
+            list-style-type: lower-roman;
+        }
+    }
+}
+
+main img {
+    max-width: 100%;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+  opacity: 0.8;
+}
+q:before {
+    content: open-quote;
+}
+q:after {
+    content: close-quote;
+}
+
+main blockquote {
+    font-family: $heading-font;
+    border-left: 1em solid $body-accent-color;
+    background-color: $body-accent-bg;
+    padding: rhythm(0.5);
+    > cite {
+        font-style: italic;
+        opacity: 0.75;
+        &:before {
+            content: '—';
+        }
+    }
+
+    &.aligncenter {
+        max-width: 35em;
+    }
+
+    &.alignright,
+    &.alignleft {
+        max-width: 20em;
+    }
+}
+
+main aside {
+    border-top: 1em solid $body-accent-color;
+    border-bottom: 1em solid $body-accent-color;
+    background-color: $body-accent-bg;
+    padding: rhythm(0.5);
+
+    &.aligncenter {
+        max-width: 35em;
+    }
+
+    &.alignright,
+    &.alignleft {
+        max-width: 20em;
+    }
+}
+
+
+.aligncenter,
+.alignright,
+.alignleft {
+    display: block;
+    margin: rhythm(0.5) auto;
+}
+
+main hr {
+    background-color: rgba(0, 0, 0, 0.13);
+    border: 0;
+    height: 1px;
+    margin: 0p auto;
+}
+
+@media (min-width: 50em) {
+    .alignright {
+        margin: rhythm(0.5) rhythm(1);
+        margin-top: 0;
+        margin-right: 0;
+        clear: right;
+        float: right;
+    }
+    .alignleft {
+        margin: rhythm(0.5) rhythm(1);
+        margin-top: 0;
+        margin-left: 0;
+        clear: left;
+        float: left;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #6273B9;
+    border-bottom: 1px solid #6273B9;
+    &:hover {
+        color: #6273B9;
+        border-bottom: 2px solid #6273B9;
+    }
+    &:active {
+        color: #D48827;
+        border-bottom: 2px solid #D48827;
+    }
+    &:visited {
+        color: #79172D;
+        border-bottom: 1px solid #79172D;
+    }
+}
