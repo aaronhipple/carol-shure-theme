@@ -233,6 +233,37 @@ footer nav {
 nav a:hover {
     opacity: 0.8;
 }
+nav ul li {
+    position: relative;
+    ul {
+        li {
+            display: block;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            display: block;
+            margin: 0;
+            padding: rhythm(0.25) rhythm(0.5);
+        }
+        display: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 10em;
+        background-color: #83172D;
+    }
+    &:hover > ul {
+        display: block;
+        z-index: 99;
+        a {
+            color: white;
+        }
+    }
+}
 
 footer {
     color: white;
