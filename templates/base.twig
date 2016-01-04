@@ -14,7 +14,9 @@
 						<a href="/" rel="home">{{site.name}}</a>
 					</h1>
 					<nav id="nav-main" class="nav-main" role="navigation">
+						<div class="wrapper">
 						{% include 'menu.twig' with { 'menu': header_menu } %}
+						</div>
 					</nav><!-- #nav -->
 				</div>
 			{% endblock %}
@@ -23,11 +25,14 @@
 		<section id="content" role="main" class="content-wrapper">
 			{% if (post.get_thumbnail) %}
 			<div class="header" style="background-image: url('{{ post.thumbnail.src | resize(1920, 240) }}');">
-				{% block title %}{% endblock %}
+				{% block title %}<h1>{{title}}</h1>{% endblock %}
 			</div>
 			{% endif %}
 
 			<div class="wrapper {{sidebar_class}}">
+				{% if (post.get_thumbnail == '') %}
+					<h1>{{title}}</h1>
+				{% endif %}
 				{% block content %}
 					Sorry, no content
 				{% endblock %}
@@ -41,10 +46,12 @@
 
 		{% block footer %}
 			<footer id="footer">
-				<nav id="nav-secondary" class="nav-secondary" role="navigation">
-					{% include 'menu.twig' with { 'menu': footer_menu } %}
-				</nav>
-				<div class="wrapper">{% include 'footer.twig' %}</div>
+				<div class="wrapper">
+					<nav id="nav-secondary" class="nav-secondary" role="navigation">
+						{% include 'menu.twig' with { 'menu': footer_menu } %}
+					</nav>
+					{% include 'footer.twig' %}
+				</div>
 			</footer>
 			{{ function('wp_footer') }}
 		{% endblock %}

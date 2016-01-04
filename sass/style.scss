@@ -67,24 +67,62 @@ header {
     background-position: bottom left;
     border-bottom: 2em solid #83172D;
     padding: rhythm(1);
-    padding-bottom: 30vh;
+    background-size: contain;
 
-    @media (min-width: 50em) {
-        padding: rhythm(1);
-        background-size: auto 100%;
-        padding-top: 30vh;
-        padding-left: 20vw;
-    }
-    
     min-height: 100vh;
     display:flex;
     justify-content:center;
     align-items: center;
     text-align: center;
 
+    @media (max-aspect-ratio: 1/1) {
+        padding-bottom: 50vw;
+    }
+
+    @media (max-aspect-ratio: 4/5) {
+        padding-bottom: 60vw;
+    }
+
+    @media (max-aspect-ratio: 3/4) {
+        padding-bottom: 70vw;
+    }
+
+    @media (min-aspect-ratio: 1/1) {
+        padding-top: 40vh;
+        padding-left: 30vw;
+    }
+
+    @media (min-aspect-ratio: 4/3) {
+        align-items: flex-end;
+        padding-top: 0;
+        padding-bottom: 10vh;
+    }
+    
+
     h1 {
-        @media (max-width:30em) {
+        @media (orientation: landscape) {
+            @include adjust-font-size-to($ratio * $base-font-size);
+        }
+        @media (min-width:30em) and (orientation: landscape) {
+            @include adjust-font-size-to($ratio * $ratio * $base-font-size);
+        }
+        @media (min-width: 50em) and (orientation: landscape) {
             @include adjust-font-size-to($ratio * $ratio * $ratio * $base-font-size);
+        }
+        @media (min-width: 70em) and (orientation: landscape) {
+            @include adjust-font-size-to($ratio * $ratio * $ratio * $ratio * $base-font-size);
+        }
+        @media (orientation: portrait) {
+            @include adjust-font-size-to($ratio * $ratio * $base-font-size);
+        }
+        @media (min-width: 30em) and (orientation: portrait) {
+            @include adjust-font-size-to($ratio * $ratio * $ratio * $base-font-size);
+        }
+        @media (min-width: 40em) and (orientation: portrait) {
+            @include adjust-font-size-to($ratio * $ratio * $ratio * $base-font-size);
+        }
+        @media (min-width: 51em) and (orientation: portrait) {
+            @include adjust-font-size-to($ratio * $ratio * $ratio * $ratio * $base-font-size);
         }
     }
 
@@ -112,7 +150,9 @@ header {
         color: white;
         display: block;
         .unscrolled & {
-            @include adjust-font-size-to($ratio * $base-font-size);
+            @media (min-width:40em) {
+                @include adjust-font-size-to($ratio * $base-font-size);
+            }
             margin: 0 auto;
             padding: rhythm(0.25) rhythm(0.5);
         }
@@ -135,6 +175,7 @@ header {
                 background-color: #83172D;
                 color: white;
                 li a {
+                    display: block;
                     padding: rhythm(0.25) rhythm(0.5);
                 }
             }
@@ -147,9 +188,9 @@ header {
         h1 {
             flex: 1;
             @media ( min-width: 50em ) {
-                padding-right: rhythm(1.75);
+                @include adjust-font-size-to($ratio * $ratio * $ratio * $ratio * $base-font-size);
+                @include margin-leader(0.33);
             }
-            @include adjust-font-size-to($ratio * $ratio * $ratio * $base-font-size);
         }
 
         nav {

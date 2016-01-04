@@ -8,12 +8,14 @@ class Site extends TimberSite {
         add_theme_support( 'post-formats' );
         add_theme_support( 'post-thumbnails' );
         add_theme_support( 'menus' );
+        add_theme_support( 'html5' );
         add_filter( 'timber_context', [$this, 'add_to_context'] );
         add_filter( 'get_twig', [$this, 'add_to_twig'] );        
         add_filter( 'body_class', [$this, 'addBodyClasses'] );
         add_action( 'wp_enqueue_scripts', [$this, 'enqueueScripts']);
         add_action( 'admin_init', [$this, 'addEditorStyle'] );
         new Menus();
+        new Customizer();
         parent::__construct();
     }
 
@@ -49,7 +51,7 @@ class Site extends TimberSite {
         }
         wp_enqueue_style(
             'google-fonts',
-            'https://fonts.googleapis.com/css?family=Josefin+Sans:100,300|Roboto'
+            'https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,600|Arvo:400,700'
         );
     }
 
