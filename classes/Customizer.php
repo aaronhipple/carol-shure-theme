@@ -23,9 +23,19 @@ class Customizer {
             'default' => '#E69021',
             'rules' => [
                 'background-color' => [
-                    'button',
-                    '.button',
+                    '#content button',
+                    '#content .button',
                 ],
+                'border-top-color' => [
+                    'aside',
+                ],
+                'border-bottom-color' => [
+                    'aside',
+                ],
+                'border-left-color' => [
+                    'blockquote',
+                ]
+
             ],
         ],
         'footer_bg' => [

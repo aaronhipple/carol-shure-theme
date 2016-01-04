@@ -230,7 +230,7 @@ q:after {
 /* line 114, ../sass/_typography.scss */
 blockquote {
   font-family: "Josefin Sans", sans-serif;
-  border-left: 1em solid #78162D;
+  border-left: 1em solid #E69021;
   background-color: #ccc;
   padding: 0.75em;
 }
@@ -254,8 +254,8 @@ blockquote.alignright, blockquote.alignleft {
 
 /* line 137, ../sass/_typography.scss */
 aside {
-  border-top: 1em solid #78162D;
-  border-bottom: 1em solid #78162D;
+  border-top: 1em solid #E69021;
+  border-bottom: 1em solid #E69021;
   background-color: #ccc;
   padding: 0.75em;
 }
@@ -326,8 +326,8 @@ a:visited {
 }
 
 /* line 1, ../sass/_utilities.scss */
-a.button,
-button {
+#content a.button,
+#content button {
   display: inline-block;
   background-color: #E69021;
   padding: 0.375em 0.75em;
@@ -335,8 +335,8 @@ button {
   color: white;
 }
 /* line 8, ../sass/_utilities.scss */
-a.button:hover,
-button:hover {
+#content a.button:hover,
+#content button:hover {
   opacity: 0.8;
 }
 
@@ -382,10 +382,14 @@ nav ul {
 /* line 52, ../sass/style.scss */
 nav li {
   display: inline-block;
+}
+/* line 54, ../sass/style.scss */
+nav li a {
+  display: block;
   padding: 0 0.375em;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 header {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -402,7 +406,7 @@ header {
   align-items: center;
   text-align: center;
 }
-/* line 58, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 header a,
 header a:hover,
 header a:active,
@@ -411,32 +415,32 @@ header a:visited {
   color: #555;
 }
 @media (max-aspect-ratio: 1 / 1) {
-  /* line 57, ../sass/style.scss */
+  /* line 60, ../sass/style.scss */
   header {
     padding-bottom: 50vw;
   }
 }
 @media (max-aspect-ratio: 4 / 5) {
-  /* line 57, ../sass/style.scss */
+  /* line 60, ../sass/style.scss */
   header {
     padding-bottom: 60vw;
   }
 }
 @media (max-aspect-ratio: 3 / 4) {
-  /* line 57, ../sass/style.scss */
+  /* line 60, ../sass/style.scss */
   header {
     padding-bottom: 70vw;
   }
 }
 @media (min-aspect-ratio: 1 / 1) {
-  /* line 57, ../sass/style.scss */
+  /* line 60, ../sass/style.scss */
   header {
     padding-top: 40vh;
     padding-left: 30vw;
   }
 }
 @media (min-aspect-ratio: 4 / 3) {
-  /* line 57, ../sass/style.scss */
+  /* line 60, ../sass/style.scss */
   header {
     align-items: flex-end;
     padding-top: 0;
@@ -444,98 +448,97 @@ header a:visited {
   }
 }
 @media (orientation: landscape) {
-  /* line 105, ../sass/style.scss */
+  /* line 108, ../sass/style.scss */
   header h1 {
     font-size: 1.55556em;
     line-height: 1.92857em;
   }
 }
 @media (min-width: 30em) and (orientation: landscape) {
-  /* line 105, ../sass/style.scss */
+  /* line 108, ../sass/style.scss */
   header h1 {
     font-size: 2.41975em;
     line-height: 1.2398em;
   }
 }
 @media (min-width: 50em) and (orientation: landscape) {
-  /* line 105, ../sass/style.scss */
+  /* line 108, ../sass/style.scss */
   header h1 {
     font-size: 3.76406em;
     line-height: 1.19552em;
   }
 }
 @media (min-width: 70em) and (orientation: landscape) {
-  /* line 105, ../sass/style.scss */
+  /* line 108, ../sass/style.scss */
   header h1 {
     font-size: 5.8552em;
     line-height: 1.28091em;
   }
 }
 @media (orientation: portrait) {
-  /* line 105, ../sass/style.scss */
+  /* line 108, ../sass/style.scss */
   header h1 {
     font-size: 2.41975em;
     line-height: 1.2398em;
   }
 }
 @media (min-width: 30em) and (orientation: portrait) {
-  /* line 105, ../sass/style.scss */
+  /* line 108, ../sass/style.scss */
   header h1 {
     font-size: 3.76406em;
     line-height: 1.19552em;
   }
 }
 @media (min-width: 40em) and (orientation: portrait) {
-  /* line 105, ../sass/style.scss */
+  /* line 108, ../sass/style.scss */
   header h1 {
     font-size: 3.76406em;
     line-height: 1.19552em;
   }
 }
 @media (min-width: 51em) and (orientation: portrait) {
-  /* line 105, ../sass/style.scss */
+  /* line 108, ../sass/style.scss */
   header h1 {
     font-size: 5.8552em;
     line-height: 1.28091em;
   }
 }
-/* line 133, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .unscrolled header nav li.button {
   display: block;
-  margin: 0.75em auto 0;
-  padding: 0;
+  padding: 0.75em auto 0;
 }
-/* line 140, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 header nav li.button:nth-of-type(3n) a {
   background-color: #E69021;
 }
-/* line 144, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 header nav li.button:nth-of-type(3n+1) a {
   background-color: #2E979A;
 }
-/* line 148, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 header nav li.button:nth-of-type(3n+2) a {
   background-color: #6884D4;
 }
-/* line 152, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 header nav li.button a {
   color: white;
   display: block;
   width: auto;
 }
-/* line 155, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .unscrolled header nav li.button a {
-  margin: 0 auto;
+  margin: 0;
   padding: 0.375em 0.75em;
 }
 @media (min-width: 40em) {
-  /* line 155, ../sass/style.scss */
+  /* line 157, ../sass/style.scss */
   .unscrolled header nav li.button a {
     font-size: 1.55556em;
     line-height: 1.92857em;
   }
 }
-/* line 165, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .scrolled header {
   align-items: flex-end;
   border-bottom: 0;
@@ -546,45 +549,45 @@ header nav li.button a {
   background-size: auto calc(100% - 2.25em);
   background-position: calc(50% - 15em) calc(100% - 2.25em);
 }
-/* line 176, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .scrolled header > div {
   width: 100%;
   /* display: flex;
   justify-content:center;
   align-items: flex-end; */
 }
-/* line 177, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .scrolled header > div nav {
   background-color: #83172D;
   color: white;
 }
-/* line 180, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .scrolled header > div nav li a {
   display: block;
   padding: 0.375em 0.75em;
 }
-/* line 191, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .scrolled header h1 {
   flex: 1;
 }
 @media (min-width: 50em) {
-  /* line 191, ../sass/style.scss */
+  /* line 193, ../sass/style.scss */
   .scrolled header h1 {
     font-size: 5.8552em;
     line-height: 1.28091em;
     margin-top: 0.495em;
   }
 }
-/* line 199, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .scrolled header nav {
   flex: 2;
 }
 
-/* line 205, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 #content {
   flex: 1;
 }
-/* line 206, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 #content .header {
   background-position: center center;
   background-size: cover;
@@ -598,12 +601,12 @@ header nav li.button a {
   text-align: center;
   color: white;
 }
-/* line 219, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 #content .wrapper {
   padding: 1.5em;
 }
 
-/* line 227, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .scrolled header nav a,
 .scrolled header nav a:hover,
 .scrolled header nav a:active,
@@ -616,66 +619,66 @@ footer nav a:visited {
   border: 0;
 }
 
-/* line 236, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 nav a:hover {
   opacity: 0.8;
 }
 
-/* line 239, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 nav li {
   position: relative;
 }
-/* line 241, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 nav li ul {
   display: none;
   position: absolute;
   left: 0;
   width: 10em;
 }
-/* line 242, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 nav li ul li {
   display: block;
   text-align: left;
   margin: 0;
   padding: 0;
 }
-/* line 248, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 nav li ul a {
   display: block;
   margin: 0;
   padding: 0.375em 0.75em;
 }
-/* line 257, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 header nav li ul {
   top: 100%;
   background-color: #83172D;
 }
-/* line 261, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 footer nav li ul {
   bottom: 100%;
   background-color: #7188DA;
 }
-/* line 266, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 nav li:hover > ul {
   display: block;
   z-index: 99;
 }
-/* line 269, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 nav li:hover > ul a {
   color: white;
 }
 
-/* line 275, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 footer {
   color: white;
   background-color: #7188DA;
   font-family: "Josefin Sans", sans-serif;
 }
-/* line 278, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 footer .wrapper {
   padding: 1.5em;
 }
-/* line 283, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 footer .copyright {
   margin: 0;
   text-align: right;

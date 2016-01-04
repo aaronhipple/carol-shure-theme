@@ -155,7 +155,7 @@ q:after {
 /* line 114, ../sass/_typography.scss */
 blockquote {
   font-family: "Josefin Sans", sans-serif;
-  border-left: 1em solid #78162D;
+  border-left: 1em solid #E69021;
   background-color: #ccc;
   padding: 0.75em;
 }
@@ -179,8 +179,8 @@ blockquote.alignright, blockquote.alignleft {
 
 /* line 137, ../sass/_typography.scss */
 aside {
-  border-top: 1em solid #78162D;
-  border-bottom: 1em solid #78162D;
+  border-top: 1em solid #E69021;
+  border-bottom: 1em solid #E69021;
   background-color: #ccc;
   padding: 0.75em;
 }
@@ -251,8 +251,8 @@ a:visited {
 }
 
 /* line 1, ../sass/_utilities.scss */
-a.button,
-button {
+#content a.button,
+#content button {
   display: inline-block;
   background-color: #E69021;
   padding: 0.375em 0.75em;
@@ -260,8 +260,8 @@ button {
   color: white;
 }
 /* line 8, ../sass/_utilities.scss */
-a.button:hover,
-button:hover {
+#content a.button:hover,
+#content button:hover {
   opacity: 0.8;
 }
 
