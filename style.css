@@ -626,11 +626,8 @@ nav li {
 /* line 239, ../sass/style.scss */
 nav li ul {
   display: none;
-  margin: 0;
-  padding: 0;
   position: absolute;
   left: 0;
-  top: 100%;
   width: 10em;
 }
 /* line 240, ../sass/style.scss */
@@ -646,35 +643,37 @@ nav li ul a {
   margin: 0;
   padding: 0.375em 0.75em;
 }
-/* line 258, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 header nav li ul {
+  top: 100%;
   background-color: #83172D;
 }
 /* line 259, ../sass/style.scss */
 footer nav li ul {
+  bottom: 100%;
   background-color: #7188DA;
 }
-/* line 261, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 nav li:hover > ul {
   display: block;
   z-index: 99;
 }
-/* line 264, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 nav li:hover > ul a {
   color: white;
 }
 
-/* line 270, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 footer {
   color: white;
   background-color: #7188DA;
   font-family: "Josefin Sans", sans-serif;
 }
-/* line 273, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 footer .wrapper {
   padding: 1.5em;
 }
-/* line 278, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 footer .copyright {
   margin: 0;
   text-align: right;
