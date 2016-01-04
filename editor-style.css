@@ -100,39 +100,39 @@ ol:last-child {
 }
 
 /* line 74, ../sass/_typography.scss */
-main ul,
+ul,
 ol {
   padding-left: 3em;
 }
 
 /* line 79, ../sass/_typography.scss */
-main ul {
+ul {
   list-style-type: disc;
 }
 /* line 81, ../sass/_typography.scss */
-main ul ul {
+ul ul {
   list-style-type: circle;
 }
 /* line 83, ../sass/_typography.scss */
-main ul ul ul {
+ul ul ul {
   list-style-type: square;
 }
 
 /* line 89, ../sass/_typography.scss */
-main ol {
+ol {
   list-style-type: decimal;
 }
 /* line 91, ../sass/_typography.scss */
-main ol ol {
+ol ol {
   list-style-type: lower-alpha;
 }
 /* line 93, ../sass/_typography.scss */
-main ol ol ol {
+ol ol ol {
   list-style-type: lower-roman;
 }
 
 /* line 99, ../sass/_typography.scss */
-main img {
+img {
   max-width: 100%;
 }
 
@@ -153,43 +153,43 @@ q:after {
 }
 
 /* line 114, ../sass/_typography.scss */
-main blockquote {
+blockquote {
   font-family: "Josefin Sans", sans-serif;
   border-left: 1em solid #78162D;
   background-color: #ccc;
   padding: 0.75em;
 }
 /* line 119, ../sass/_typography.scss */
-main blockquote > cite {
+blockquote > cite {
   font-style: italic;
   opacity: 0.75;
 }
 /* line 122, ../sass/_typography.scss */
-main blockquote > cite:before {
+blockquote > cite:before {
   content: '—';
 }
 /* line 127, ../sass/_typography.scss */
-main blockquote.aligncenter {
+blockquote.aligncenter {
   max-width: 35em;
 }
 /* line 131, ../sass/_typography.scss */
-main blockquote.alignright, main blockquote.alignleft {
+blockquote.alignright, blockquote.alignleft {
   max-width: 20em;
 }
 
 /* line 137, ../sass/_typography.scss */
-main aside {
+aside {
   border-top: 1em solid #78162D;
   border-bottom: 1em solid #78162D;
   background-color: #ccc;
   padding: 0.75em;
 }
 /* line 143, ../sass/_typography.scss */
-main aside.aligncenter {
+aside.aligncenter {
   max-width: 35em;
 }
 /* line 147, ../sass/_typography.scss */
-main aside.alignright, main aside.alignleft {
+aside.alignright, aside.alignleft {
   max-width: 20em;
 }
 
@@ -202,7 +202,7 @@ main aside.alignright, main aside.alignleft {
 }
 
 /* line 161, ../sass/_typography.scss */
-main hr {
+hr {
   background-color: rgba(0, 0, 0, 0.13);
   border: 0;
   height: 1px;

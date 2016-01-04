@@ -175,39 +175,39 @@ ol:last-child {
 }
 
 /* line 74, ../sass/_typography.scss */
-main ul,
+ul,
 ol {
   padding-left: 3em;
 }
 
 /* line 79, ../sass/_typography.scss */
-main ul {
+ul {
   list-style-type: disc;
 }
 /* line 81, ../sass/_typography.scss */
-main ul ul {
+ul ul {
   list-style-type: circle;
 }
 /* line 83, ../sass/_typography.scss */
-main ul ul ul {
+ul ul ul {
   list-style-type: square;
 }
 
 /* line 89, ../sass/_typography.scss */
-main ol {
+ol {
   list-style-type: decimal;
 }
 /* line 91, ../sass/_typography.scss */
-main ol ol {
+ol ol {
   list-style-type: lower-alpha;
 }
 /* line 93, ../sass/_typography.scss */
-main ol ol ol {
+ol ol ol {
   list-style-type: lower-roman;
 }
 
 /* line 99, ../sass/_typography.scss */
-main img {
+img {
   max-width: 100%;
 }
 
@@ -228,43 +228,43 @@ q:after {
 }
 
 /* line 114, ../sass/_typography.scss */
-main blockquote {
+blockquote {
   font-family: "Josefin Sans", sans-serif;
   border-left: 1em solid #78162D;
   background-color: #ccc;
   padding: 0.75em;
 }
 /* line 119, ../sass/_typography.scss */
-main blockquote > cite {
+blockquote > cite {
   font-style: italic;
   opacity: 0.75;
 }
 /* line 122, ../sass/_typography.scss */
-main blockquote > cite:before {
+blockquote > cite:before {
   content: '—';
 }
 /* line 127, ../sass/_typography.scss */
-main blockquote.aligncenter {
+blockquote.aligncenter {
   max-width: 35em;
 }
 /* line 131, ../sass/_typography.scss */
-main blockquote.alignright, main blockquote.alignleft {
+blockquote.alignright, blockquote.alignleft {
   max-width: 20em;
 }
 
 /* line 137, ../sass/_typography.scss */
-main aside {
+aside {
   border-top: 1em solid #78162D;
   border-bottom: 1em solid #78162D;
   background-color: #ccc;
   padding: 0.75em;
 }
 /* line 143, ../sass/_typography.scss */
-main aside.aligncenter {
+aside.aligncenter {
   max-width: 35em;
 }
 /* line 147, ../sass/_typography.scss */
-main aside.alignright, main aside.alignleft {
+aside.alignright, aside.alignleft {
   max-width: 20em;
 }
 
@@ -277,7 +277,7 @@ main aside.alignright, main aside.alignleft {
 }
 
 /* line 161, ../sass/_typography.scss */
-main hr {
+hr {
   background-color: rgba(0, 0, 0, 0.13);
   border: 0;
   height: 1px;
@@ -374,16 +374,18 @@ body {
 
 /* line 46, ../sass/style.scss */
 nav ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 nav li {
   display: inline-block;
   padding: 0 0.375em;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 header {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -400,7 +402,7 @@ header {
   align-items: center;
   text-align: center;
 }
-/* line 56, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 header a,
 header a:hover,
 header a:active,
@@ -409,32 +411,32 @@ header a:visited {
   color: #555;
 }
 @media (max-aspect-ratio: 1 / 1) {
-  /* line 55, ../sass/style.scss */
+  /* line 57, ../sass/style.scss */
   header {
     padding-bottom: 50vw;
   }
 }
 @media (max-aspect-ratio: 4 / 5) {
-  /* line 55, ../sass/style.scss */
+  /* line 57, ../sass/style.scss */
   header {
     padding-bottom: 60vw;
   }
 }
 @media (max-aspect-ratio: 3 / 4) {
-  /* line 55, ../sass/style.scss */
+  /* line 57, ../sass/style.scss */
   header {
     padding-bottom: 70vw;
   }
 }
 @media (min-aspect-ratio: 1 / 1) {
-  /* line 55, ../sass/style.scss */
+  /* line 57, ../sass/style.scss */
   header {
     padding-top: 40vh;
     padding-left: 30vw;
   }
 }
 @media (min-aspect-ratio: 4 / 3) {
-  /* line 55, ../sass/style.scss */
+  /* line 57, ../sass/style.scss */
   header {
     align-items: flex-end;
     padding-top: 0;
@@ -442,98 +444,98 @@ header a:visited {
   }
 }
 @media (orientation: landscape) {
-  /* line 103, ../sass/style.scss */
+  /* line 105, ../sass/style.scss */
   header h1 {
     font-size: 1.55556em;
     line-height: 1.92857em;
   }
 }
 @media (min-width: 30em) and (orientation: landscape) {
-  /* line 103, ../sass/style.scss */
+  /* line 105, ../sass/style.scss */
   header h1 {
     font-size: 2.41975em;
     line-height: 1.2398em;
   }
 }
 @media (min-width: 50em) and (orientation: landscape) {
-  /* line 103, ../sass/style.scss */
+  /* line 105, ../sass/style.scss */
   header h1 {
     font-size: 3.76406em;
     line-height: 1.19552em;
   }
 }
 @media (min-width: 70em) and (orientation: landscape) {
-  /* line 103, ../sass/style.scss */
+  /* line 105, ../sass/style.scss */
   header h1 {
     font-size: 5.8552em;
     line-height: 1.28091em;
   }
 }
 @media (orientation: portrait) {
-  /* line 103, ../sass/style.scss */
+  /* line 105, ../sass/style.scss */
   header h1 {
     font-size: 2.41975em;
     line-height: 1.2398em;
   }
 }
 @media (min-width: 30em) and (orientation: portrait) {
-  /* line 103, ../sass/style.scss */
+  /* line 105, ../sass/style.scss */
   header h1 {
     font-size: 3.76406em;
     line-height: 1.19552em;
   }
 }
 @media (min-width: 40em) and (orientation: portrait) {
-  /* line 103, ../sass/style.scss */
+  /* line 105, ../sass/style.scss */
   header h1 {
     font-size: 3.76406em;
     line-height: 1.19552em;
   }
 }
 @media (min-width: 51em) and (orientation: portrait) {
-  /* line 103, ../sass/style.scss */
+  /* line 105, ../sass/style.scss */
   header h1 {
     font-size: 5.8552em;
     line-height: 1.28091em;
   }
 }
-/* line 131, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .unscrolled header nav li.button {
   display: block;
   margin: 0.75em auto 0;
   padding: 0;
 }
-/* line 138, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 header nav li.button:nth-of-type(3n) a {
   background-color: #E69021;
 }
-/* line 142, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 header nav li.button:nth-of-type(3n+1) a {
   background-color: #2E979A;
 }
-/* line 146, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 header nav li.button:nth-of-type(3n+2) a {
   background-color: #6884D4;
 }
-/* line 150, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 header nav li.button a {
   color: white;
   display: block;
   width: auto;
 }
-/* line 153, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .unscrolled header nav li.button a {
   margin: 0 auto;
   padding: 0.375em 0.75em;
 }
 @media (min-width: 40em) {
-  /* line 153, ../sass/style.scss */
+  /* line 155, ../sass/style.scss */
   .unscrolled header nav li.button a {
     font-size: 1.55556em;
     line-height: 1.92857em;
   }
 }
-/* line 163, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .scrolled header {
   align-items: flex-end;
   border-bottom: 0;
@@ -544,45 +546,45 @@ header nav li.button a {
   background-size: auto calc(100% - 2.25em);
   background-position: calc(50% - 15em) calc(100% - 2.25em);
 }
-/* line 174, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .scrolled header > div {
   width: 100%;
   /* display: flex;
   justify-content:center;
   align-items: flex-end; */
 }
-/* line 175, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .scrolled header > div nav {
   background-color: #83172D;
   color: white;
 }
-/* line 178, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .scrolled header > div nav li a {
   display: block;
   padding: 0.375em 0.75em;
 }
-/* line 189, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .scrolled header h1 {
   flex: 1;
 }
 @media (min-width: 50em) {
-  /* line 189, ../sass/style.scss */
+  /* line 191, ../sass/style.scss */
   .scrolled header h1 {
     font-size: 5.8552em;
     line-height: 1.28091em;
     margin-top: 0.495em;
   }
 }
-/* line 197, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .scrolled header nav {
   flex: 2;
 }
 
-/* line 203, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 #content {
   flex: 1;
 }
-/* line 204, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 #content .header {
   background-position: center center;
   background-size: cover;
@@ -596,12 +598,12 @@ header nav li.button a {
   text-align: center;
   color: white;
 }
-/* line 217, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 #content .wrapper {
   padding: 1.5em;
 }
 
-/* line 225, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .scrolled header nav a,
 .scrolled header nav a:hover,
 .scrolled header nav a:active,
@@ -614,66 +616,66 @@ footer nav a:visited {
   border: 0;
 }
 
-/* line 234, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 nav a:hover {
   opacity: 0.8;
 }
 
-/* line 237, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 nav li {
   position: relative;
 }
-/* line 239, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 nav li ul {
   display: none;
   position: absolute;
   left: 0;
   width: 10em;
 }
-/* line 240, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 nav li ul li {
   display: block;
   text-align: left;
   margin: 0;
   padding: 0;
 }
-/* line 246, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 nav li ul a {
   display: block;
   margin: 0;
   padding: 0.375em 0.75em;
 }
-/* line 255, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 header nav li ul {
   top: 100%;
   background-color: #83172D;
 }
-/* line 259, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 footer nav li ul {
   bottom: 100%;
   background-color: #7188DA;
 }
-/* line 264, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 nav li:hover > ul {
   display: block;
   z-index: 99;
 }
-/* line 267, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 nav li:hover > ul a {
   color: white;
 }
 
-/* line 273, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 footer {
   color: white;
   background-color: #7188DA;
   font-family: "Josefin Sans", sans-serif;
 }
-/* line 276, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 footer .wrapper {
   padding: 1.5em;
 }
-/* line 281, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 footer .copyright {
   margin: 0;
   text-align: right;
