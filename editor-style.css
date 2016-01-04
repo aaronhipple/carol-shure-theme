@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* line 106, ../../../../../../../.gem/ruby/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 3, ../sass/_typography.scss */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 7, ../sass/_typography.scss */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* line 14, ../sass/_typography.scss */
+h1 {
+  font-weight: 100;
+}
+
+/* line 18, ../sass/_typography.scss */
+header h1 {
+  font-size: 6.5536em;
+  line-height: 1.14441em;
+}
+
+/* line 23, ../sass/_typography.scss */
+h1 {
+  font-size: 4.096em;
+  line-height: 1.09863em;
+}
+/* line 25, ../sass/_typography.scss */
+main h1 {
+  letter-spacing: 0.05em;
+}
+
+/* line 31, ../sass/_typography.scss */
+h2 {
+  font-size: 2.56em;
+  line-height: 1.17187em;
+}
+/* line 33, ../sass/_typography.scss */
+main h2 {
+  letter-spacing: 0.05em;
+}
+
+/* line 39, ../sass/_typography.scss */
+h3 {
+  font-size: 1.6em;
+  line-height: 1.875em;
+}
+/* line 41, ../sass/_typography.scss */
+main h3 {
+  letter-spacing: 0.05em;
+}
+
+/* line 47, ../sass/_typography.scss */
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/* line 49, ../sass/_typography.scss */
+main h4 {
+  letter-spacing: 0.05em;
+}
+
+/* line 55, ../sass/_typography.scss */
+p,
+ul,
+ol {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 60, ../sass/_typography.scss */
+p:first-child,
+ul:first-child,
+ol:first-child {
+  margin-top: 0;
+}
+/* line 63, ../sass/_typography.scss */
+p:last-child,
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+
+/* line 68, ../sass/_typography.scss */
+main ul,
+ol {
+  padding-left: 3em;
+}
+
+/* line 73, ../sass/_typography.scss */
+main ul {
+  list-style-type: disc;
+}
+/* line 75, ../sass/_typography.scss */
+main ul ul {
+  list-style-type: circle;
+}
+/* line 77, ../sass/_typography.scss */
+main ul ul ul {
+  list-style-type: square;
+}
+
+/* line 83, ../sass/_typography.scss */
+main ol {
+  list-style-type: decimal;
+}
+/* line 85, ../sass/_typography.scss */
+main ol ol {
+  list-style-type: lower-alpha;
+}
+/* line 87, ../sass/_typography.scss */
+main ol ol ol {
+  list-style-type: lower-roman;
+}
+
+/* line 93, ../sass/_typography.scss */
+main img {
+  max-width: 100%;
+}
+
+/* line 97, ../sass/_typography.scss */
+q {
+  quotes: "“" "”" "‘" "’";
+  opacity: 0.8;
+}
+
+/* line 101, ../sass/_typography.scss */
+q:before {
+  content: open-quote;
+}
+
+/* line 104, ../sass/_typography.scss */
+q:after {
+  content: close-quote;
+}
+
+/* line 108, ../sass/_typography.scss */
+main blockquote {
+  font-family: "Josefin Sans", sans-serif;
+  border-left: 1em solid #78162D;
+  background-color: #ccc;
+  padding: 0.75em;
+}
+/* line 113, ../sass/_typography.scss */
+main blockquote > cite {
+  font-style: italic;
+  opacity: 0.75;
+}
+/* line 116, ../sass/_typography.scss */
+main blockquote > cite:before {
+  content: '—';
+}
+/* line 121, ../sass/_typography.scss */
+main blockquote.aligncenter {
+  max-width: 35em;
+}
+/* line 125, ../sass/_typography.scss */
+main blockquote.alignright, main blockquote.alignleft {
+  max-width: 20em;
+}
+
+/* line 131, ../sass/_typography.scss */
+main aside {
+  border-top: 1em solid #78162D;
+  border-bottom: 1em solid #78162D;
+  background-color: #ccc;
+  padding: 0.75em;
+}
+/* line 137, ../sass/_typography.scss */
+main aside.aligncenter {
+  max-width: 35em;
+}
+/* line 141, ../sass/_typography.scss */
+main aside.alignright, main aside.alignleft {
+  max-width: 20em;
+}
+
+/* line 148, ../sass/_typography.scss */
+.aligncenter,
+.alignright,
+.alignleft {
+  display: block;
+  margin: 0.75em auto;
+}
+
+/* line 155, ../sass/_typography.scss */
+main hr {
+  background-color: rgba(0, 0, 0, 0.13);
+  border: 0;
+  height: 1px;
+  margin: 0p auto;
+}
+
+@media (min-width: 50em) {
+  /* line 163, ../sass/_typography.scss */
+  .alignright {
+    margin: 0.75em 1.5em;
+    margin-top: 0;
+    margin-right: 0;
+    clear: right;
+    float: right;
+  }
+
+  /* line 170, ../sass/_typography.scss */
+  .alignleft {
+    margin: 0.75em 1.5em;
+    margin-top: 0;
+    margin-left: 0;
+    clear: left;
+    float: left;
+  }
+}
+/* line 179, ../sass/_typography.scss */
+a {
+  text-decoration: none;
+  color: #6273B9;
+  border-bottom: 1px solid #6273B9;
+}
+/* line 183, ../sass/_typography.scss */
+a:hover {
+  color: #6273B9;
+  border-bottom: 2px solid #6273B9;
+}
+/* line 187, ../sass/_typography.scss */
+a:active {
+  color: #D48827;
+  border-bottom: 2px solid #D48827;
+}
+/* line 191, ../sass/_typography.scss */
+a:visited {
+  color: #79172D;
+  border-bottom: 1px solid #79172D;
+}
+
+/* line 4, ../sass/editor-style.scss */
+body#tinymce.wp-editor {
+  max-width: 50em;
+  margin: auto;
+  background-color: #ddd;
+  color: #555;
+}

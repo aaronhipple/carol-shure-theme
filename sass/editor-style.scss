@@ -1,0 +1,9 @@
+@import "variables";
+@import "typography";
+
+body#tinymce.wp-editor {
+    max-width: 50em;
+    margin: auto;
+    background-color: $body-background;
+    color: $body-color;
+}

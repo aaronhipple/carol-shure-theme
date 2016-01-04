@@ -1,5 +1,4 @@
 @import 'compass/typography';
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,300|Roboto);
 @include establish-baseline();
 body {
     font-family: $body-font;
