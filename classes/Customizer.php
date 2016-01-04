@@ -11,9 +11,20 @@ class Customizer {
             'rules' => [
                 'background-color' => [
                     '.scrolled header > div nav',
+                    'header nav li ul',
                 ],
                 'border-bottom-color' => [
                     'header',
+                ],
+            ],
+        ],
+        'buttons_accents' => [
+            'label' => 'Buttons and Other Accents',
+            'default' => '#E69021',
+            'rules' => [
+                'background-color' => [
+                    'button',
+                    '.button',
                 ],
             ],
         ],
@@ -23,6 +34,7 @@ class Customizer {
             'rules' => [
                 'background-color' => [
                     'footer',
+                    'footer nav li ul',
                 ]
             ]
         ],

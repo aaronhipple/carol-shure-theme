@@ -249,7 +249,22 @@ a:visited {
   border-bottom: 1px solid #79172D;
 }
 
-/* line 4, ../sass/editor-style.scss */
+/* line 1, ../sass/_utilities.scss */
+a.button,
+button {
+  display: inline-block;
+  background-color: #E69021;
+  padding: 0.375em 0.75em;
+  border-bottom: 0;
+  color: white;
+}
+/* line 8, ../sass/_utilities.scss */
+a.button:hover,
+button:hover {
+  opacity: 0.8;
+}
+
+/* line 5, ../sass/editor-style.scss */
 body#tinymce.wp-editor {
   max-width: 50em;
   margin: auto;

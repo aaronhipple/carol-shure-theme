@@ -1,0 +1,11 @@
+a.button,
+button {
+    display: inline-block;
+    background-color: #E69021;
+    padding: rhythm(0.25) rhythm(0.5);
+    border-bottom: 0;
+    color: white;
+    &:hover {
+        opacity: 0.8;
+    }
+}

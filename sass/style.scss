@@ -13,6 +13,7 @@
 @import "compass/reset";
 @import "variables";
 @import "typography";
+@import "utilities";
 
 html {
     -webkit-box-sizing: border-box;
@@ -233,7 +234,7 @@ footer nav {
 nav a:hover {
     opacity: 0.8;
 }
-nav ul li {
+nav li {
     position: relative;
     ul {
         li {
@@ -254,7 +255,8 @@ nav ul li {
         left: 0;
         top: 100%;
         width: 10em;
-        background-color: #83172D;
+        header & { background-color: #83172D; }
+        footer & { background-color: #7188DA; }
     }
     &:hover > ul {
         display: block;
