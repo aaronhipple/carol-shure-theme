@@ -589,6 +589,7 @@ header nav li.button a {
 }
 /* line 208, ../sass/style.scss */
 #content .header {
+  overflow: hidden;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -608,19 +609,19 @@ header nav li.button a {
       0 0 1em black
   ; */
 }
-/* line 227, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 #content .header h1 {
   padding: 0.375em 0.75em;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 2em;
-  box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1em 5em rgba(0, 0, 0, 0.5);
 }
-/* line 234, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 #content .wrapper {
   padding: 1.5em;
 }
 
-/* line 242, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .scrolled header nav a,
 .scrolled header nav a:hover,
 .scrolled header nav a:active,
@@ -633,66 +634,66 @@ footer nav a:visited {
   border: 0;
 }
 
-/* line 251, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 nav a:hover {
   opacity: 0.8;
 }
 
-/* line 254, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 nav li {
   position: relative;
 }
-/* line 256, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 nav li ul {
   display: none;
   position: absolute;
   left: 0;
   width: 10em;
 }
-/* line 257, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 nav li ul li {
   display: block;
   text-align: left;
   margin: 0;
   padding: 0;
 }
-/* line 263, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 nav li ul a {
   display: block;
   margin: 0;
   padding: 0.375em 0.75em;
 }
-/* line 272, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 header nav li ul {
   top: 100%;
   background-color: #83172D;
 }
-/* line 276, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 footer nav li ul {
   bottom: 100%;
   background-color: #7188DA;
 }
-/* line 281, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 nav li:hover > ul {
   display: block;
   z-index: 99;
 }
-/* line 284, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 nav li:hover > ul a {
   color: white;
 }
 
-/* line 290, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 footer {
   color: white;
   background-color: #7188DA;
   font-family: "Josefin Sans", sans-serif;
 }
-/* line 293, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 footer .wrapper {
   padding: 1.5em;
 }
-/* line 298, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 footer .copyright {
   margin: 0;
   text-align: right;
